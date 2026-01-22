@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <title>Email on your&nbsp;schedule | Sean Bartz</title>
+    <meta name="description" content="Email on your&nbsp;schedule - Sean Bartz">
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="nav">
+          <div class="logo">Sean Bartz</div>
+          <nav class="nav-links">
+            <a href="index.html">Home</a><a href="about-me.html">About</a><a href="research.html">Research</a><a href="teaching.html">Teaching</a><a href="research-publications.html">Publications</a><a href="student-collaborations.html">Collaborations</a><a href="research-summaries.html">Summaries</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="page-header">
+          <div class="container">
+            <h1 class="title">Email on your&nbsp;schedule</h1>
+            <p class="subtitle"><a href="index.html">Home</a> / Email on your&nbsp;schedule</p>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="content-card legacy-content">
+              <p>If you give your email inbox unlimited access to your focus, it will never leave you alone. I limit this by having my email delivered to my inbox only at certain times of the day.</p>
+<p>There are paid services that will do this for you &#8212; I started out by using Inbox Pause by Boomerang. Originally, this was included in the free service, but now you have to pay to have your email delivered on a set schedule. (You can still pause your inbox indefinitely or for a set amount of time, but you have to go back and manually turn the feature back on.)</p>
+<p>If you use gmail, you can follow these steps to hack together a Google Apps script that will deliver your email at the times you have set aside to deal with it.</p>
+<ol>
+<li>Set up a gmail filter that will divert all incoming mail from your inbox. Go to settings&gt;filters, and create a new filter. In the &#8220;From:&#8221; field, type &#8220;*&#8221;, and in the &#8220;Has the words:&#8221; field, type &#8220;label:inbox&#8221;. (Don&#8217;t include the quotes in either.) It should look like this:<img loading="lazy" class="alignnone size-full wp-image-222" src="assets/legacy/2019/01/gmailfilter.jpeg" alt="gmailfilter"   /></li>
+<li>Click continue. Gmail will scold you, warning that this filter won&#8217;t work, but it works in my experience.</li>
+<li>The next page will ask what action the filter should perform. Check &#8220;Skip the Inbox (Archive it)&#8221; and &#8220;Apply the Label: Paused&#8221; (that&#8217;s what I named my label, and what my Google Apps script refers to).<img loading="lazy" class="alignnone size-full wp-image-223" src="assets/legacy/2019/01/gmailfilter2.jpeg" alt="gmail filter 2.jpeg"   /></li>
+<li>Go to Google Apps scripts and create a new script. The script is as follows:<br />
+<img loading="lazy" class="alignnone size-full wp-image-226" src="assets/legacy/2019/01/unpausescript.jpeg" alt="unpausescript"   /></li>
+<li>Click the clock icon to set the triggers for this script. Select time-based triggers and choose the time of day that works best for you. I choose to deliver three times per day: once during my commute so that I see them when I get to my office, once after my morning classes are done, and once before I leave for the day. You can choose different times for different days of the week, but it takes a bit longer to set up.</li>
+</ol>
+<p>There are several benefits to this setup. It allows you to batch email-related tasks to a few times per day, clearing up the rest of your schedule. You still have the ability to send email. If there&#8217;s a thread that you want to see replies to immediately, you can just leave that thread in your inbox and the reply will show up. Finally, you can always &#8220;cheat the system&#8221; by looking at the unread count on your &#8220;Paused&#8221; label. This was particularly tempting during my job search, but I usually found some annoying email that I didn&#8217;t want to deal with, instead of exciting job news.</p>
+<p>Let me know if you try this, or have any interesting tweaks to the system.</p>
+<div id="atatags-370373-6970083a10a77">
+		
+	</div><span id="wordads-inline-marker" style="display: none;"></span><div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer"
+			
+				class="share-twitter sd-button share-icon"
+				href="index.html2019/01/31/email-on-your-schedule/?share=twitter"
+				target="_blank"
+				aria-labelledby="sharing-twitter-221"
+				>
+				<span id="sharing-twitter-221" hidden>Share on X (Opens in new window)</span>
+				<span>X</span>
+			</a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer"
+			
+				class="share-facebook sd-button share-icon"
+				href="index.html2019/01/31/email-on-your-schedule/?share=facebook"
+				target="_blank"
+				aria-labelledby="sharing-facebook-221"
+				>
+				<span id="sharing-facebook-221" hidden>Share on Facebook (Opens in new window)</span>
+				<span>Facebook</span>
+			</a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-94775314-221-6970083a1105c' data-src='//widgets.wp.com/likes/index.html?ver=20260120#blog_id=94775314&amp;post_id=221&amp;origin=seanbartz.wordpress.com&amp;obj_id=94775314-221-6970083a1105c&amp;domain=seanbartz.com' data-name='like-post-frame-94775314-221-6970083a1105c' data-title='Like or Reblog'><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class='loading'>Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="container">
+        Content adapted from the original seanbartz.com page.
+      </footer>
+    </div>
+  </body>
+</html>
